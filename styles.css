@@ -6,11 +6,19 @@ body{
     text-align: center;
     font-family:Verdana;
 }
-.chickenContainer, .sushiContainer,.beefContainer{
 
-    border: solid 3px #000000;
+.wrapper{
+    width: 100%;
+    /*margin-left: 0 auto;*/
+    /*margin-right: 0 auto;*/
+    margin: 0 auto;
+}
+.section{
+
+    border: solid 2px #000000;
     background-color: #999999;
-
+width: 98%;
+    margin: 1%;
 
 }
 h1{
@@ -19,86 +27,76 @@ h1{
 }
 h2{
     border: solid 1px #000000;
-    width: 32%;
-    margin-left:auto;
-    margin-right:0;
-    margin-top: 0px;
+    /*width: 32%;*/
+    /*margin-left:auto;*/
+    /*margin-right:0;*/
+    /*margin-top: 0px;*/
+    margin: 0px;
     font-weight: 500;
     font-size: 1.1em;
-    padding: 3px;
+    padding-left: 4%;
+    padding-right: 4%;
+    float: right;
 
 
 }
+p{
+    clear: both;
+    margin: 2%;
+}
 
-.chicken{
+.box1>h2{
       background-color: #d89899;
 
 }
 
-.beef{
+.box2>h2{
     background-color: #c54346;
     color: #ffffff;
 }
 
-.sushi{
+.box3>h2{
     background-color: #e6d09f;
 }
-@media screen and (max-width: 767px) {
 
-    .chickenContainer, .sushiContainer,.beefContainer{
-
-        margin: 0 auto;
-        width: 70%;
-        margin-bottom: 30px;
-    }
-}
-
+/*tablet*/
 @media screen  and (min-width: 768px) and (max-width: 991px) {
 
-.meat{
-    width: 90%;
-    margin: 0 auto;
 
+
+
+.container:nth-child(1){
+    display:inline-block;
+    width:47%;
+    /*border:1px solid #000000;*/
+    float:left;
 }
-    .chickenContainer{
-        width: 48%;
-        
-        float: left;
-        /*margin-right:31px ;*/
-        margin-right: 30px;
-        /*margin-left: 45px;*/
-        /*margin-bottom: 40px;*/
-    }
-    .beefContainer{
-        width: 48%;
 
-        /*float: left;*/
-
-        float: right; clear: none;
+    .container:nth-child(2){
+        display:inline-block;
+        width:47%;
+        /*border:1px solid #000000;*/
+        float:left;
     }
-    .sushiContainer{
-        width: 90%;
+
+    .container:nth-child(3){
+        display:block;
+        width:95%;
+        clear: both;
         /*margin: 0 auto;*/
-        display: inline-block;
-        margin-top: 30px;
-        margin-right: 40px;
-        margin-left: 40px;
+        /*border:1px solid #000000;*/
+        /*float:left;*/
     }
 
-
-
 }
-
+/*desktop*/
 @media screen and  (min-width: 992px) {
 
-    .chickenContainer, .beefContainer{
-        margin-bottom: 30px;
-        margin-right: 20px;
-    }
-
-    .chickenContainer, .sushiContainer,.beefContainer { width: 32%; }
-    .chickenContainer,.beefContainer { float: left; }
-    .sushiContainer{ float: right; clear: none; }
-
+.section{
+    width: 30%;
+    margin: 1%;
+    display: inline-block;
+    float: left;
+}
 
 }
